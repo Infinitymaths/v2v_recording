@@ -230,4 +230,4 @@ def update_user():
     return render_template("update_user.html", user_image=full_filename)
 
 
-app.run()
+# app.run()
