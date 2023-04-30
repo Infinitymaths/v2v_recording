@@ -1,15 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-      {
-          "src": "*.py",
-         
-      }
-  ],
-  "routes": [
-      {
-          "src": "(.*)",
-          "dest": "Flask_main_code.py"
-      }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index" }
   ]
 }
