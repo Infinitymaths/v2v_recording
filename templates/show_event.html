@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/index.css') }}">
+    <style>
+        .centered{
+        text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <img src="{{ user_image }}" alt="Logo"  height="100" width="100">
+    </div>
+
+    <div class="centered">
+<!--        <form action="/deleted_event" method="POST">-->
+            <ul>
+		        {% for option in options %}
+
+                <li><a href="/deleted_event/{{ option }}">{{ option }}</a></li>
+		        {% endfor %}
+            </ul>
+<!--		<input type="submit" value="Submit">-->
+    </div>
+</body>
+</html>

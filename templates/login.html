@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+        <style>
+        .centered{
+        text-align:center;
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <img src="{{ user_image }}" alt="Logo"  height="100" width="100">
+    </div>
+
+    <div class="centered">
+            <form method="post">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <br/><br/>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <br/><br/>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

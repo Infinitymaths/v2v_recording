@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Event</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/index.css') }}">
+    <style>
+        .centered{
+        text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <img src="{{ user_image }}" alt="Logo"  height="100" width="100">
+    </div>
+    <div class="centered">
+      <form method="post">
+        <label><b>Date of the Event</b></label>
+        <input placeholder="Enter the Date" type="datetime-local" name="date"/>
+        <br/><br/>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+</body>
+</html>

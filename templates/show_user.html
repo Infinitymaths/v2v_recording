@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/index.css') }}">
+    <style>
+        .centered{
+        text-align:center;
+        td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+    </style>
+</head>
+<body>
+<style>
+ td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+ th {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+</style>
+    <div class="centered">
+        <img src="{{ user_image }}" alt="Logo"  height="100" width="100">
+    </div>
+    <div class="centered">
+    <table >
+      <thead>
+        <tr>
+          <th>Name of the teacher</th>
+          <th>Email Address of the teacher</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for row in data %}
+          <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+          </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    <div class="break">
+        <a href="{{url_for('main')}}"><button type="submit" name="add_user" value="add_user" class="btn btn-2">Go back to Home</button></a>
+    </div>
+</body>
+</html>

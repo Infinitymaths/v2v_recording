@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Update</title>
+    <style>
+        .centered{
+        text-align:center;
+        td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <img src="{{ user_image }}" alt="Logo"  height="100" width="100">
+    </div>
+    <div class="centered">
+        <br/><br/>
+        <form method="post">
+          <label><b>Name of the Teacher to be updated</b></label>
+          <input type="text" placeholder="Enter Name" name="update">
+          <br/><br/>
+          <label><b>New Start Date time to be updated</b></label>
+          <input type="datetime-local" placeholder="Enter Name" name="start_date">
+          <br/><br/>
+            <label><b>New End Date time to be updated</b></label>
+          <input type="datetime-local" placeholder="Enter Name" name="end_date">
+          <br/><br/>
+          <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

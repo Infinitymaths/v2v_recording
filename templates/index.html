@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/index.css') }}">
+    <title>Recording Timetable</title>
+    <style>
+        .centered{
+        text-align:center;
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <img src="{{ user_image }}" alt="Logo"  height="100" width="100">
+    </div>
+    <div class="centered">
+        <form method="POST">
+            <div class="break">
+                <button type="submit" name="button1" value="button1" class="btn btn-2">Add Event</button>
+                <button type="submit" name="button2" value="button2" class="btn btn-2">Delete Event</button>
+            </div>
+            <div class="break">
+                <button type="submit" name="button3" value="button3" class="btn btn-2">Update Event</button>
+                <button type="submit" name="button4" value="button4" class="btn btn-2">Add User</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

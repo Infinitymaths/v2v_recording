@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Creation</title>
+    <style>
+        .centered{
+        text-align:center;
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <img src="{{ user_image }}" alt="Logo"  height="100" width="100">
+    </div>
+    <form method="post">
+        Name of the teacher: <input placeholder="Name of teacher" name="nm"/>
+        <br/><br/>
+        Start DateTime: <input placeholder="Start Date and time" type="datetime-local" name="startdate"/>
+        <br/><br/>
+        End DateTime: <input placeholder="End Date and time" type="datetime-local" name = 'enddate'/>
+        <br/><br/>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
