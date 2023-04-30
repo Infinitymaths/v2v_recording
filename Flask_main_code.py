@@ -14,7 +14,6 @@ full_filename = os.path.join(app.config['UPLOAD_FOLDER'], 'logo_2.png')
 
 
 @app.route('/', methods=['GET', 'POST'])
-@app.route('/index', methods=['GET', 'POST'])
 def main():
     if request.method == 'POST':
         if 'button1' in request.form:
